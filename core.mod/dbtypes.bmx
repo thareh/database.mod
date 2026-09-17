@@ -339,7 +339,7 @@ Type TDBByte Extends TDBType
 	bbdoc: Returns the decimal representation of the byte value.
 	End Rem
 	Method getDecimal:TDecimal()
-		Return Decimal(value)
+		Return Decimal(Int(value))
 	End Method
 
 	Rem
@@ -548,7 +548,7 @@ Type TDBShort Extends TDBType
 	bbdoc: Returns the decimal representation of the value.
 	End Rem
 	Method getDecimal:TDecimal()
-		Return Decimal(value)
+		Return Decimal(Int(value))
 	End Method
 
 	Rem
